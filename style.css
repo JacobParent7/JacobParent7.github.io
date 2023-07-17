@@ -1,0 +1,130 @@
+@import url("https://fonts.google.com/specimen/Ubuntu");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.name {
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.navbar a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 45px;
+  transition: 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #c7975e;
+}
+
+.home {
+  height: 100vh;
+  background: url("nightpot.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.about {
+  height: 100vh;
+  background: url("519582_0004.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.content h3 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #c7975e;
+}
+
+.content .buttonBox {
+  margin-top: 40px;
+  width: 340px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonBox a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #0d1d20;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.buttonBox a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #c7975e;
+  border: 2px solid #c7975e;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #0d1d20;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.buttonBox a:hover {
+  color: #c7975e;
+}
+
+.buttonBox a:hover::before {
+  height: 100%;
+}
